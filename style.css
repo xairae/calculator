@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box; /* Include padding e bordo nelle dimensioni totali */
+}
+
+body { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+.calculator { 
+    width: 300px; 
+    border: 2px solid #333; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 10px; 
+    background-color: #97BCAD; 
+}
+
+.schermo { 
+    width: 100%; 
+    height: 40px; 
+    text-align: right; 
+    padding: 10px; 
+    font-size: 1.5em; 
+    border: 1px solid #000000; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    background-color: #c7d6d0; 
+    color: rgb(53, 53, 53); 
+}
+
+.buttons { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 5px; 
+}
+
+.button {
+    padding: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%; 
+    height: 60px; 
+    background-color: #37775D; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
